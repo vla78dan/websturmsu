@@ -6,7 +6,7 @@
 
 :root {
     --index: calc(1vw + 1vh);
-    --swiper-theme-color: #f3eb06;
+    --swiper-theme-color: rgba(243, 235, 6, 0.5);
     --swiper-navigation-size: 28px;
     --swiper-navigation-sides-offset: 40px;
     --swiper-pagination-bottom: 40px;
@@ -45,10 +45,27 @@ body {
     content: '';
     height: 1px;
     width: 20%;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.35);
     position: absolute;
     left: 40%;
     bottom: calc(var(--index) * -1);
+}
+
+.slide_content p {
+    font-size: calc(var(--index) * .9);
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: calc(var(--index) * .5);
+}
+
+button {
+    --button-color: #F3EB0680;
+    padding: 9px 35px;
+    font-size: 15px;
+    border-radius: 10em;
+    background-color: transparent;
+    border: 1px solid var(--button-color);
+    color: var(--button-color);
 }
 
 
