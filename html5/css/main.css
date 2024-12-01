@@ -5,7 +5,8 @@
 }
 
 :root {
-    --swiper-theme-color: #866848;
+    --index: calc(1vw + 1vh);
+    --swiper-theme-color: #f3eb06;
     --swiper-navigation-size: 28px;
     --swiper-navigation-sides-offset: 40px;
     --swiper-pagination-bottom: 40px;
@@ -27,3 +28,58 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.slide_content {
+    text-align: center;
+}
+
+.slide_content h2 {
+    font-size: calc(var(--index) * 4);
+    text-transform: uppercase;
+    letter-spacing: calc(var(--index) * 1.5);
+    margin-bottom: calc(var(--index) * 2);
+    position: relative;
+}
+
+.slide_content h2::after {
+    content: '';
+    height: 1px;
+    width: 20%;
+    background-color: #ffffff;
+    position: absolute;
+    left: 40%;
+    bottom: calc(var(--index) * -1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
