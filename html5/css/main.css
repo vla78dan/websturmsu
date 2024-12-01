@@ -1,14 +1,29 @@
-*{
-margin: 0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-
+:root {
+    --swiper-theme-color: #866848;
+    --swiper-navigation-size: 28px;
+    --swiper-navigation-sides-offset: 40px;
+    --swiper-pagination-bottom: 40px;
+    --swiper-pagination-color: #f3eb06;
+    --swiper-pagination-bullet-inactive-color: #C4BF37FF;
 }
 
-body{
+body {
     background: #000;
     color: #fff;
+}
+
+.slider {
+    height: 100vh;
+}
+
+.slider .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
