@@ -6,8 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="libs/gsap/gsap.min.js"></script>
 
-    <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="libs/swiper/swiper-bundle.min.js" defer></script>
     <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
 
     <link rel="stylesheet" href="css/main.css">
@@ -16,42 +17,62 @@
 </head>
 <body>
 
+<div class="top-line">
+    <div class="container container-top">
+        <div>
+            <div class="logo">
+                <img src="img/logosu.svg">
+            </div>
+        </div>
+        <div>
+            <ul class="main-mnu">
+                <li><a href="#">About</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- SLIDER-->
+
 <div class="swiper slider">
 
     <div class="swiper-wrapper">
 
         <div class="swiper-slide slide">
             <div class="slide_content">
-                <h2>мастерская</h2>
+                <h2>webмастер</h2>
                 <p>мобильный адаптивный</p>
-                <button>на связи</button>
+                <button>telegram</button>
             </div>
 
         </div>
 
         <div class="swiper-slide slide">
             <div class="slide_content">
-                <h2>телеграм бот</h2>
+                <h2>@phpsturm</h2>
                 <p>бот - интернет магазин</p>
-                <button>на связи</button>
+                <button>telegram</button>
             </div>
 
         </div>
 
         <div class="swiper-slide slide">
             <div class="slide_content">
-                <h2>сайт визитка</h2>
-                <p>ваш блог</p>
-                <button>на связи</button>
+                <h2>изготовит</h2>
+                <p>web блог, визитка</p>
+                <button>telegram</button>
             </div>
 
         </div>
 
         <div class="swiper-slide slide">
             <div class="slide_content">
-                <h2>WooCommers</h2>
+                <h2>web сайт</h2>
                 <p>интернет магазин</p>
-                <button>на связи</button>
+                <button>telegram</button>
             </div>
 
         </div>
@@ -67,12 +88,13 @@
         </div>
         <div class="slider-navigation">
             <div class="swiper-button-prev"></div>
-            <div class="swiper-button-nex"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </div>
 
 </div>
 
+<video src="media/background.mp4" class="video-background" muted></video>
 
 </body>
 </html>

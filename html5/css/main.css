@@ -9,7 +9,7 @@
     --swiper-theme-color: rgba(243, 235, 6, 0.5);
     --swiper-navigation-size: 28px;
     --swiper-navigation-sides-offset: 40px;
-    --swiper-pagination-bottom: 40px;
+    --swiper-pagination-bottom: 30px;
     --swiper-pagination-color: #f3eb06;
     --swiper-pagination-bullet-inactive-color: #C4BF37FF;
 }
@@ -21,6 +21,7 @@ body {
 
 .slider {
     height: 100vh;
+    box-shadow: inset 0 50px 50px #000000, inset 0 -50px 50px #000000;
 }
 
 .slider .slide {
@@ -31,6 +32,12 @@ body {
 
 .slide_content {
     text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.swiper-slide-active .slide_content {
+    opacity: 1;
 }
 
 .slide_content h2 {
@@ -56,20 +63,103 @@ body {
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.8);
     letter-spacing: calc(var(--index) * .5);
+    margin-bottom: calc(var(--index) * 2.6);
 }
 
 button {
-    --button-color: #F3EB0680;
+    --button-color: rgba(255, 255, 255);
     padding: 9px 35px;
-    font-size: 15px;
+    font-size: 14px;
     border-radius: 10em;
     background-color: transparent;
-    border: 1px solid var(--button-color);
+    border: 2px solid var(--button-color);
     color: var(--button-color);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.slider-navigation > * {
+    border: 2px solid #C4BF37FF;
+    border-radius: 10em;
+    width: 50px;
+    height: 50px;
+}
+
+.video-background {
+    position: fixed;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .7;
+    transition: opacity 1.5s;
+}
+
+.video-background.change {
+    opacity: 1;
 }
 
 
+/* Interface */
 
+.container {
+    margin: auto;
+    max-width: 840px;
+}
+
+.container-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-line {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    padding: 1.7rem 0;
+}
+
+.logo {
+    /*border: 3px solid #E1E6F7;*/
+    /*border-radius: 10em;*/
+    color: #C4BF37FF;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .75;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.main-mnu {
+    display: flex;
+    margin-top: 15px;
+    font-size: 19px;
+    margin-right: -16px;
+}
+
+.main-mnu li {
+    list-style: none;
+}
+
+.main-mnu a {
+    color: #bbbec9;
+    padding: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    font-weight: 200;
+    outline: none;
+}
+
+.main-mnu a:hover {
+    text-decoration: underline;
+}
 
 
 
