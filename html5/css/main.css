@@ -121,19 +121,19 @@ button {
 }
 
 .logo {
-    /*border: 3px solid #E1E6F7;*/
-    /*border-radius: 10em;*/
-    color: #C4BF37FF;
+    border: 3px dotted #E1E6F7;
+    border-radius: 10em;
+    color: #ffffff;
     width: 54px;
     height: 54px;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: .75;
+    opacity: .5;
 }
 
 .logo img {
-    width: 100px;
+    width: 25px;
     height: auto;
 }
 
